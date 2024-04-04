@@ -42,9 +42,9 @@ body:
     attributes:
       label: Methodology
       description: |
-        Describe, e.g. the computation, script or workflow to be performed.
+        Describe, e.g. the computation, script, procedure or workflow to be performed.
         When linking to references, please refer to the specific section, page, or equation.
-      placeholder: ""
+      placeholder: "Example: users enters data into webform, which is further processed"
     validations:
       required: true
   - type: textarea
@@ -53,7 +53,7 @@ body:
       label: Outputs
       description: |
         Describe in detail all the output data and data properties.
-      placeholder: ""
+      placeholder: "Example: text file containing information about performed steps"
     validations:
       required: true
   - type: dropdown
