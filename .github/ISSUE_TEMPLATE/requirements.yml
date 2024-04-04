@@ -1,0 +1,87 @@
+name: RDM requirement
+description: Describe a requirement
+title: "[Requirement] "
+labels: ["requirement"]
+projects: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to provide as many details as possible for this requirement!
+  - type: input
+    id: summary
+    attributes:
+      label: Executive summary
+      description: Provide a short summary of the requirement
+      placeholder: "Example: We need a secure way to transfer file."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and background knowledge
+      description: |
+        - What is the context of this requirement?
+        - What background knowledge is required to understand it?
+        - Does this depend on previous tasks? Provide links!
+        - Is there follow-up work?
+      placeholder: "Example: See summary on respective repository."
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Inputs
+      description: |
+        Describe in detail all the input data and data properties that are known.
+      placeholder: "Example: A binary file"
+    validations:
+      required: true
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Methodology
+      description: |
+        Describe, e.g. the computation, script or workflow to be performed.
+        When linking to references, please refer to the specific section, page, or equation.
+      placeholder: ""
+    validations:
+      required: true
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Outputs
+      description: |
+        Describe in detail all the output data and data properties.
+      placeholder: ""
+    validations:
+      required: true
+  - type: dropdown
+    id: interfaces
+    attributes:
+      label: Which interfaces are required?
+      multiple: true
+      options:
+        - File log 
+        - Python module / function
+        - Python script
+        - Jupyter notebook
+        - Other (please describe in comments)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: testcases
+    attributes:
+      label: Test cases
+      description: How can we test this requirement? Links to tests data and reference data, or other suggestions.
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Do you have other comments that do not fall in the above categories?
+      placeholder: "Example: Depends on issue #1234"
+    validations:
+      required: false
